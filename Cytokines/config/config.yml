@@ -1,0 +1,30 @@
+default:
+  appConfig:
+    applicationID: '8ED9E46C-CD54-4403-BFB7-3B672055F618'
+    applicationName: 'COVIDome | Cytokines'
+    applicationLabel: 'Cytokines'
+    Environment: 'Production'
+    titleWidth: 300
+    sidebarWidth: 280 
+    debug: 0 
+    applicationURL: 'https://medschool.cuanschutz.edu/covidome'
+    applicationImageURL: 
+    projectName: 'COVIDome Explorer'  
+  dataconnection:
+    db_key: !expr Sys.getenv("DB_ENC_KEY")
+    db_connection_string: !expr Sys.getenv("DB_ENC_STRING")
+    driver: 'ODBC Driver 18 for SQL Server'
+
+localAzure:
+  dataconnection:
+    driver: 'ODBC Driver 18 for SQL Server'
+
+connect_cloud:
+  dataconnection:
+    driver: 'FreeTDS'
+    TDS_Version: 8.0     
+
+shinyapps:
+  dataconnection:
+    driver: 'FreeTDS'
+    TDS_Version: 8.0
