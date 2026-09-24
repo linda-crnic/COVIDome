@@ -1,7 +1,9 @@
 ConnectionStrings.config
 PrivateSettings.config
 
-config.yml
+.Renviron
+
+*/renv/*
 
 # History files
 .Rhistory
