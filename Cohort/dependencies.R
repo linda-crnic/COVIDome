@@ -1,7 +1,10 @@
 shhh <- suppressPackageStartupMessages
 
 shhh(library(shiny))
-shhh(library(tidyverse))
+shhh(library(dplyr))
+shhh(library(tidyr))
+shhh(library(purrr))
+shhh(library(readr))
 shhh(library(shinydashboard))
 shhh(library(shinydashboardPlus))
 shhh(library(shinyWidgets))
