@@ -1,0 +1,30 @@
+default:
+  appConfig:
+    applicationID: 'ECDEF16A-F69A-48FC-B4CC-136EEA79B845'
+    applicationName: 'COVIDome | Immune Map'
+    applicationLabel: 'Immune Maps'
+    Environment: 'Production'
+    titleWidth: 300
+    sidebarWidth: 280
+    debug: 0 
+    applicationURL: 'https://medschool.cuanschutz.edu/covidome'
+    applicationImageURL: 
+    projectName: 'COVIDome Explorer'  
+  dataconnection:
+    db_key: !expr Sys.getenv("DB_ENC_KEY")
+    db_connection_string: !expr Sys.getenv("DB_ENC_STRING")
+    driver: 'ODBC Driver 18 for SQL Server'
+
+localAzure:
+  dataconnection:
+    driver: 'ODBC Driver 18 for SQL Server'
+
+connect_cloud:
+  dataconnection:
+    driver: 'FreeTDS'
+    TDS_Version: 8.0       
+
+shinyapps:
+  dataconnection:
+    driver: 'FreeTDS'
+    TDS_Version: 8.0
